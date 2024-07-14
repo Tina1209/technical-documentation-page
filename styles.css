@@ -1,0 +1,154 @@
+
+
+html,
+body {
+  min-width: 290px;
+  color: #4F4A45;
+  background-color: #F8FAE5;
+  font-family: 'Zona Pro', Arial, sans-serif;
+  line-height: 1.5;
+} 
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 330px;
+  height: 100%;
+  background-color: #76ABAE;
+  
+}
+
+header {
+  color: #594F4B;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+#navbar ul {
+  height: 81%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+#navbar ul::-webkit-scrollbar {
+  width: 0;
+}
+
+#navbar li {
+  color: #F8FAE5;
+  border-bottom: 1px solid;
+   border-radius: 0 0px 8px 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li:first-of-type {
+ border-top: 1px solid;
+  border-radius: 0 0px 8px 0;
+}
+#navbar li:last-of-type {
+ border-bottom: 0;
+}
+
+#navbar li:hover {
+    background-color: #F6F1EE;
+}
+
+#navbar li:active {
+  box-shadow: 0 3px #302C29;
+  transform: translateY(4px);
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 15px;
+  color: #F6F1EE;
+  text-decoration: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+    color: #302C29;
+    padding: 15px 15px;
+}
+
+#main-doc {
+  position: relativ;
+  margin-left: 350px;
+  padding: 20px 10px;
+}
+
+section article {
+  margin: 15px;
+  padding: 0px 20px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code  {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  line-height: 2;
+  background-color: #594F4B;
+  color: #F6F1EE;
+  padding: 15px;
+  margin: 10px;
+  padding-top: 0;
+  margin-top: 0;
+  border-radius: 5px;
+  max-width: 570px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    height: 207px;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    height: 276;
+    border: none;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+
+#navbar ul {
+    height: 180px;
+  }
+#main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+  #navbar {
+    height: 293px;
+  }
+}
